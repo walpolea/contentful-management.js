@@ -75,6 +75,12 @@ var Client = redefine.Class({
     options.headers['Content-Type'] = 'application/vnd.contentful.management.v1+json';
     options.query.access_token = this.options.accessToken;
 
+    //Add proxy options support
+    options.proxyHost = this.options.proxyHost;
+    options.proxyPort = this.options.proxyPort;
+    options.proxyUsername = this.options.proxyUsername;
+    options.proxyPassword = this.options.proxyPassword;
+
     var uri = [
       this.options.secure ? 'https' : 'http',
       '://',

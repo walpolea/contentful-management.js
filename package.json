@@ -13,7 +13,7 @@
   "dependencies": {
     "bluebird": "^2.1.2",
     "redefine": "^0.2.0",
-    "questor": "1.0.0",
+    "questor": "git+https://github.com/jsebfranck/questor.git",
     "inherits": "^2.0.1",
     "underscore-contrib": "0.2.2"
   },
